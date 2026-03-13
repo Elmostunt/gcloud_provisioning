@@ -1,9 +1,3 @@
-Buen punto, Guillermo 👍 — si vas a **mostrar arquitectura completa (frontend → backend → DB)** en clase, conviene dejar **la conexión backend ↔ Cloud SQL funcionando**, aunque sea simple.
-
-Te dejo **el flujo completo y claro para el laboratorio**.
-
----
-
 # 1️⃣ Qué vamos a configurar
 
 En la base de datos (Cloud SQL PostgreSQL):
