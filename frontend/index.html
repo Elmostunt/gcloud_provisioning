@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Cloud Infrastructure Lab</title>
+</head>
+
+<body>
+
+<h1>Demo Cloud Infrastructure</h1>
+
+<button onclick="loadProducts()">Cargar productos</button>
+
+<ul id="products"></ul>
+
+<script>
+
+async function loadProducts(){
+
+const response = await fetch("BACKEND_URL/products")
+
+const data = await response.json()
+
+const list = document.getElementById("products")
+
+list.innerHTML=""
+
+data.forEach(p=>{
+const li=document.createElement("li")
+li.textContent=p.name
+list.appendChild(li)
+})
+
+}
+
+</script>
+
+</body>
+</html>
